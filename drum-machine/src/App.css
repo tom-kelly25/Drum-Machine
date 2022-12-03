@@ -1,38 +1,89 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #231e23;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  height: 75px;
+  width: 75px;
+  border-radius: 15%;
+  margin: 4px;
+  background-color: #231e23;
   color: white;
+  box-shadow: 1px 3px #5d534a;
+  text-align: center;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #038af8;
+  text-align: center;
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 45px;
+  animation: wiggle 3s infinite;
 }
-
-@keyframes App-logo-spin {
-  from {
+@keyframes wiggle {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  7% {
+    transform: rotate(-2deg);
   }
+  20% {
+    transform: rotate(2deg);
+  }
+  45% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  background-color: #5aacd7;
+  height: 300px;
+  border-radius: 2%;
+}
+.row1 {
+  margin-left: 250px;
+  margin-top: 25px;
+  display: flex;
+}
+.row2 {
+  margin-left: 250px;
+  display: flex;
+}
+.row3 {
+  margin-left: 250px;
+  margin-bottom: 25px;
+  display: flex;
+}
+#display {
+  background-color: #231e23;
+  font-size: large;
+  font-weight: bold;
+  height: 45px;
+  width: 150px;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-right: 40px;
+  color: #5aacd7;
+  border-radius: 4%;
+  box-shadow: 1px 3px #5d534a;
 }
