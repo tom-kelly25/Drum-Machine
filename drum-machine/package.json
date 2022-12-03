@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "nom run build",
+    "predeploy": "npm run build",
     "deploy": "react-scripts -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
