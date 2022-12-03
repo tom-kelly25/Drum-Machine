@@ -49,7 +49,25 @@ const audio = [
 ];
 
 function App() {
-  return <div>test</div>;
+  return (
+    <div className="bg-info min-vh-100 text-white">
+      <div className="text-center">
+        <h2>Drum Machine</h2>
+        {audio.map((clip) => (
+          <Pad key={clip.song} clip={clip} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Pad({ clip }) {
+  return (
+    <div className="btn btn-secondary p-4 m-3">
+      <audio className="clip" song={clip.key} src={clip.url} />
+      {clip.key}
+    </div>
+  );
 }
 
 export default App;
